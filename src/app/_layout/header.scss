@@ -1,0 +1,355 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img.logo_header {
+    width: 150px;
+    height: auto;
+    max-width: fit-content;
+}
+.nav-list-all{
+    position: relative;
+}
+.nav-list-all:after {
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    border-top: solid 6px #cdcdcd;
+    border-bottom: solid 6px transparent;
+    content: '';
+    position: absolute;
+    right: -14px;
+    top: 9px;
+}
+
+// .user-dropdown:hover  .drop-down-list  {
+//         display: block;
+// }
+.drop-arrow:before {
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    border-top: solid 10px transparent;
+    border-bottom: solid 10px #f3f4f6;
+    content: '';
+    position: absolute;
+    right: 17px;
+    top: -19px;
+}
+.drop-arrow a strong:hover{
+display: flex !important; 
+}
+
+
+
+ 
+
+@media (min-width: 767px) and (max-width:840px) {
+    .header-custom{
+        justify-content: left !important;
+    }
+    .log-out{
+        margin-left: 5%;
+    }
+    .user-dropdown{
+        margin-left: 6%;
+    }
+}
+@media (min-width: 200px) and (max-width:767px) {
+    .nav-area {
+        top: 81px;
+    }
+    .nav-list-all:after {
+        top: 11px;
+    }
+
+.header-custom{
+    max-width: 100%;padding: 0px;
+}
+.logo_header-grid {
+    padding-left: 0px;
+    right: 5%;
+        position: relative;
+    
+}
+.sear-grid {
+    right: 7%;
+    position: relative;
+}
+.chart-grid {
+    right: 7%;
+}
+.user-dropdown {
+    right: 3%;
+}
+.all-form-custom input {
+    padding-left: 6px;
+    padding-right: 0px;
+    font-size: 12px;
+}
+.search-header{
+    position: absolute; z-index: 999;
+}
+
+.search-header  input#header-main-search{
+    width: 50px;
+    height: 50px;
+    font-size: 10pt;
+    padding-left: 35px;
+  float: left;
+    -webkit-transition: width .55s ease;
+    -moz-transition: width .55s ease;
+    -ms-transition: width .55s ease;
+    -o-transition: width .55s ease;
+    transition: width .55s ease;
+    
+  }
+  .search-header input#header-main-search::-webkit-input-placeholder {
+    color: #65737e;
+  }
+  .search-header input#header-main-search:-moz-placeholder { /* Firefox 18- */
+    color: #65737e;  
+  }
+  .search-header input#header-main-search::-moz-placeholder {  /* Firefox 19+ */
+    color: #65737e;  
+  }
+  
+   /* ANIMATION EFFECTS */
+   .search-header  input#header-main-search:focus, .container-2 input#search:active{
+    outline:none;
+  }
+  .search-header:hover input#header-main-search{
+    outline:none; 
+    width: 200px;
+  }
+  
+  .search-header .search-h {
+    right: 14px;
+    top: 14px;
+  }
+  .profile-name .capitalize {
+    width: 45px;
+    /* border: solid; */white-space: nowrap;
+    overflow: hidden;
+}
+
+.log-out{
+    z-index: 99;
+}
+.user-dropdown{
+    z-index: 99;
+}
+.chart-grid{
+    z-index: 99;
+}
+.sear-grid{
+    z-index: 9999;
+}
+.login-w{
+    width: 100px;
+}
+.registration-w {
+width: 132px;
+}
+}
+
+@media (min-width:200px) and (max-width:696px) {
+    img.logo_header {
+        width: 120px;
+    }
+    .nav-area {
+        top: 73px;
+    }
+    .user-dropdown  {
+        button{
+            padding: 4px;
+            padding-right: 6px;
+        }
+       
+    }
+    .log-out {
+        margin-left: 0px;
+    }
+    .logo_header-grid {
+        right: 9%;
+        position: relative;
+    }
+
+    .chart-grid{
+        right: 66px;
+       
+    }
+    .user-dropdown {
+        right: 7%;
+    }
+
+    .menu-toggle {
+        right: 0%;
+    }
+    .sear-grid {
+        right: 10%;
+       
+    }
+}
+
+
+@media (min-width:200px) and (max-width:640px) {
+    img.logo_header {
+        width: 90px;
+    }
+    .logo_header-grid {
+        right: 6%;
+    }
+    .nav-area {
+        top: 64px;
+    }
+    .login-registration {
+        right: 20px;
+        position: relative;
+        z-index: 99;
+    }
+}
+
+@media (min-width:200px) and (max-width:540px) {
+    .logo_header-grid {
+        right: 0%;
+    }
+    .search-header input#header-main-search{
+        width: 45px;
+        height: 45px;
+        left: 21px;
+    }
+    .search-header .search-h {
+        right: -9px;
+        top: 13px;
+    }
+    .user-dropdown .profile-top img {
+        width: 36px;
+        height: 36px;
+    }
+    .user-dropdown button{
+        padding-right: 4px;
+    }
+    .chart-grid {
+        right: 6%;
+    }
+    .user-dropdown {
+        right: 4%;
+    }
+    .search-header{
+        left: 34%;
+    }
+    .login-w {
+        width: 79px;
+        font-size: 14px;
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+    .registration-w {
+        width: 112px;
+        font-size: 14px;
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+}
+
+
+@media (min-width:200px) and (max-width:510px) {
+    .log-out {
+        right: 3%;
+        position: relative;
+    }
+    }
+
+
+
+@media (min-width:200px) and (max-width:470px) {
+.log-out {
+    right: 5%;
+}
+.search-header {
+    left: 20%;
+}
+.chart-grid {
+    right: 8%;
+}
+.user-dropdown {
+    right: 7%;
+}
+}
+
+@media (min-width:200px) and (max-width:464px) {
+.log-out {
+    right: 7%;
+    position: relative;
+}
+}
+@media (min-width:200px) and (max-width:438px) {
+.menu-toggle {
+    right: -4%;
+}
+}
+
+@media (min-width:200px) and (max-width:420px) {
+    img.logo_header {
+        width: 70px;
+    }
+    .search-header {
+        left: 10%;
+    }
+    .chart-grid {
+        right: 10%;
+    }
+    .user-dropdown {
+        right: 10%;
+    }
+    .log-out {
+        right: 7%;
+       
+    }
+    .user-dropdown {
+        right: 7%;
+    }
+    .chart-grid {
+        right: 6%;
+    }
+    .search-header {
+        left: 22%;
+    }
+    .logo_header-grid {
+        right: -3%;
+    }
+}
+
+
+@media (min-width:200px) and (max-width:380px) {
+    .search-header input#header-main-search {
+        width: 38px;
+        left: 19px;
+    }
+    .search-header .search-h {
+        right: -10px;
+    }
+    .count-pack {
+        right: -8px;
+    }
+    .chart-grid {
+        right: 4%;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 376px) {
+    .login-registration {
+        right: 28px;
+    }
+}
+
+@media (min-width:200px) and (max-width:360px) {
+    .user-dropdown {
+        right: 4%;
+    }
+    .chart-grid {
+        right: 1%;
+    }
+    .sear-grid {
+        right: 9%;
+    }
+}

@@ -1,0 +1,77 @@
+.invoice {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  div {
+    padding: 12px;
+    span {
+      font-size: 20px;
+      font-weight: bold;
+      color: #414141;
+    }
+    &:first-child {
+      width: 100%;
+    }
+    &:nth-child(2) {
+      width: 70%;
+    }
+    &:nth-child(3) {
+      width: 30%;
+    }
+  }
+}
+
+table {
+  width: 100%;
+  td,
+  th {
+    padding: 8px;
+    border: 1px solid #c7c7c7;
+    border-collapse: collapse;
+  }
+  th {
+    font-weight: 600;
+    color: #747474;
+  }
+  td {
+    vertical-align: middle;
+  }
+  &.items {
+    th,
+    td {
+      width: 12.5%;
+    }
+    td {
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(8) {
+        text-align: end;
+      }
+    }
+  }
+  &.coupons {
+    th,
+    td {
+      width: 25%;
+    }
+    td {
+      &:last-child {
+        text-align: end;
+      }
+    }
+  }
+  &.summary {
+    th,
+    td {
+      width: 50%;
+    }
+    th {
+      text-align: end;
+    }
+    td {
+      text-align: end;
+    }
+  }
+}
